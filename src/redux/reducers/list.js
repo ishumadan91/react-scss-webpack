@@ -2,8 +2,7 @@ const list = (state = null, action) => {
     switch(action.type) {
         case 'SET_LIST':
             return {
-                ...state,
-                ...action
+                ...action.list
             }
         default:
             return state;
